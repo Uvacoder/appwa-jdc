@@ -22,12 +22,14 @@ const FeaturedProductCard: FC<CardProps> = ({ product }) => {
     <div className={s.productCard}>
       <Link href={`/product${product.path}`}>
         <a>
-          <Image
-            src={product.images.edges[0].node.urlOriginal}
-            alt="test"
-            width={200}
-            height={180}
-          />
+          {product && (
+            <Image
+              src={product.images.edges[0].node.urlOriginal}
+              alt="test"
+              width={200}
+              height={180}
+            />
+          )}
           <div className={s.info}>
             <h3 className={s.title}>{product.name}</h3>
             <Price product={product} />

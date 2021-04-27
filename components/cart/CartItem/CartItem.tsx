@@ -75,15 +75,17 @@ const CartItem = ({
       })}
     >
       <div className="w-16 h-16 bg-purple-700 relative overflow-hidden">
-        <Image
-          className={s.productImage}
-          src={item.image_url}
-          width={150}
-          height={150}
-          alt="Product Image"
-          // The cart item image is already optimized and very small in size
-          unoptimized
-        />
+        {item && (
+          <Image
+            className={s.productImage}
+            src={item.image_url}
+            width={150}
+            height={150}
+            alt="Product Image"
+            // The cart item image is already optimized and very small in size
+            unoptimized
+          />
+        )}
       </div>
       <div className="flex-1 flex flex-col text-base">
         {/** TODO: Replace this. No `path` found at Cart */}

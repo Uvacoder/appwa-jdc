@@ -58,17 +58,19 @@ const ProductCard: FC<Props> = ({
             variant={p.variants.edges?.[0]!}
           />
           <div className={s.imageContainer}>
-            <Image
-              quality="85"
-              src={src}
-              alt={p.name}
-              width={imgWidth}
-              sizes={imgSizes}
-              height={imgHeight}
-              layout={imgLayout}
-              loading={imgLoading}
-              priority={imgPriority}
-            />
+            {src && (
+              <Image
+                quality="85"
+                src={src}
+                alt={p.name}
+                width={imgWidth}
+                sizes={imgSizes}
+                height={imgHeight}
+                layout={imgLayout}
+                loading={imgLoading}
+                priority={imgPriority}
+              />
+            )}
           </div>
           <div className={s.infoContainer}>
             <div className="sm:flex-grow sm:h-full sm:flex sm:justify-between sm:flex-col">
