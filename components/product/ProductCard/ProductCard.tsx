@@ -35,12 +35,12 @@ const ProductCard: FC<Props> = ({
   variation,
 }) => {
   const src = p.images.edges?.[0]?.node?.urlOriginal!
-  const { salePrice, basePrice } = getPriceDetails(p)
-  const { price } = usePrice({
-    amount: p.prices?.price?.value,
-    baseAmount: p.prices?.retailPrice?.value,
-    currencyCode: p.prices?.price?.currencyCode!,
-  })
+  // const { salePrice, basePrice } = getPriceDetails(p)
+  // const { price } = usePrice({
+  //   amount: p.prices?.price?.value,
+  //   baseAmount: p.prices?.retailPrice?.value,
+  //   currencyCode: p.prices?.price?.currencyCode!,
+  // })
 
   return (
     <Link href={`/product${p.path}`}>
