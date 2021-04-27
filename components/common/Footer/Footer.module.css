@@ -1,0 +1,83 @@
+.root {
+  @apply max-w-8xl mx-auto;
+}
+
+.upperFooter {
+  @apply grid grid-cols-2 gap-8 border-b border-accents-2 py-12 text-primary bg-theme-primary transition-colors duration-150;
+
+  @screen lg {
+    @apply grid-cols-12;
+  }
+}
+
+.logoGrid {
+  grid-area: ;
+}
+
+.column {
+  @apply col-span-1;
+
+  @screen lg {
+    @apply col-span-2;
+  }
+}
+
+.columnHeader {
+  @apply font-bold mb-3 text-lg;
+}
+
+.menuList {
+  @apply flex flex-initial flex-col;
+
+  @screen md {
+    @apply flex-1;
+  }
+}
+
+.menuListItem {
+  @apply py-3;
+
+  @screen md {
+    @apply py-0 pb-4;
+  }
+}
+
+.menuLink {
+  @apply text-primary  transition ease-in-out duration-150;
+
+  &:hover {
+    @apply text-accents-6;
+  }
+}
+
+.social {
+  @apply flex flex-row flex-wrap;
+
+  & > a {
+    @apply ml-2 my-2;
+  }
+
+  & > nav {
+    @apply mt-2 ml-2;
+  }
+}
+
+.link {
+  @apply m-3;
+
+  & > svg {
+    @apply transform duration-75 ease-linear;
+  }
+
+  &:hover > svg {
+    @apply scale-110;
+  }
+}
+
+.lowerFooter {
+  @apply py-12 flex flex-col justify-between items-center;
+
+  @screen md {
+    @apply flex-row;
+  }
+}

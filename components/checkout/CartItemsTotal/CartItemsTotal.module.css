@@ -1,0 +1,11 @@
+.root {
+  @apply fixed bottom-0 flex w-screen p-4;
+}
+
+.container {
+  @apply rounded-lg bg-accents-2 p-2 flex-grow flex justify-between items-center;
+}
+
+.title {
+  @apply text-lg;
+}

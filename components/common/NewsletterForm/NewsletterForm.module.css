@@ -1,0 +1,40 @@
+.root {
+  border-radius: 3rem;
+  @apply relative bg-brand-primary p-6 pt-4 shadow-lg mb-9 mx-auto max-w-md w-11/12;
+
+  @screen lg {
+    @apply py-6;
+  }
+}
+
+.contentContainer {
+  @apply mx-auto;
+}
+
+.title {
+  @apply text-2xl font-bold text-white text-center;
+
+  @screen lg {
+    @apply text-3xl;
+  }
+}
+
+.subtitle {
+  @apply font-bold text-white text-sm text-center;
+
+  @screen lg {
+    @apply text-lg  mx-5 my-3;
+  }
+}
+
+.form {
+  @apply flex flex-row justify-between items-center rounded-full bg-theme-primary-2 p-3 mt-4;
+}
+
+.input {
+  @apply bg-transparent rounded-full w-2/3 h-10;
+}
+
+.submitBtn {
+  @apply text-white py-2 px-3 rounded-full bg-brand-secondary whitespace-no-wrap;
+}

@@ -1,0 +1,11 @@
+.root {
+  @apply relative;
+}
+
+.basePriceSale {
+  @apply text-accents-7 line-through;
+}
+
+.mainPrice {
+  @apply font-bold text-brand-primary;
+}

@@ -1,0 +1,20 @@
+.root {
+  @apply fixed w-screen bottom-3 p-4 z-50;
+}
+
+.container {
+  @apply border-2 rounded-lg p-3 font-bold;
+}
+
+.success {
+  @apply border-green-400 bg-green-200 text-green-700;
+}
+.fail {
+  @apply border-red-500 bg-red-300 text-red-800;
+}
+.warn {
+  @apply border-yellow-300 bg-yellow-100 text-yellow-500;
+}
+.general {
+  @apply border-blue-500 bg-blue-300 text-blue-700;
+}

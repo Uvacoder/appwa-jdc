@@ -1,0 +1,12 @@
+.root {
+  @apply my-3 bg-accents-2 p-3 rounded-lg;
+}
+
+.sectionTitle {
+  @apply text-lg mb-4 flex items-center;
+}
+
+.stepNum {
+  /* @apply bg-accents-7 rounded-full text-theme-primary mr-2 p-4; */
+  @apply text-2xl mr-2 block;
+}

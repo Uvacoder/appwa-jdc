@@ -1,0 +1,3 @@
+.root {
+  @apply relative border-t border-b border-accents-2 w-full mx-3;
+}

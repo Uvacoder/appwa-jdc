@@ -1,0 +1,16 @@
+.root {
+  @apply relative;
+
+  & a {
+    @apply pl-1 text-sm underline;
+  }
+}
+
+.starContainer {
+  @apply relative flex items-center;
+}
+
+.star {
+  @apply mr-1;
+  fill: var(--brand-secondary);
+}

@@ -1,0 +1,26 @@
+.root {
+  @apply relative mr-2 h-5 w-5 border-2;
+
+  & > label {
+    @apply hidden;
+  }
+}
+
+.input {
+  @apply absolute z-10 opacity-0 h-4 w-4;
+
+  &:hover {
+    @apply cursor-pointer;
+  }
+}
+
+.checkmark {
+  @apply absolute border-white transition-opacity;
+  height: 14px;
+  width: 7px;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+  transform: rotate(45deg);
+  left: 4px;
+  bottom: 2px;
+}

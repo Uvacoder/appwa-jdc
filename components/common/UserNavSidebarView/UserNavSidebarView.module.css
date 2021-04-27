@@ -1,0 +1,35 @@
+.root {
+  @apply relative flex justify-between flex-col h-full w-56;
+}
+
+.list {
+  @apply;
+}
+
+.section {
+  @apply w-full border-b border-accents-3 px-0 py-1;
+
+  & > h2 {
+    @apply text-sm pt-2 text-accents-5 px-4;
+  }
+
+  &:last-child {
+    @apply border-b-0;
+  }
+}
+
+.item {
+  @apply flex flex-row w-full font-medium text-primary;
+
+  &:hover {
+    @apply bg-accents-3;
+  }
+
+  & > a {
+    @apply w-full py-1 px-4;
+  }
+}
+
+.iconText {
+  @apply flex flex-row align-middle justify-center;
+}

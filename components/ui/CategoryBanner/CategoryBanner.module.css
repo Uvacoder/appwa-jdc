@@ -1,0 +1,26 @@
+.root {
+  @apply flex flex-col items-center mt-5 mb-0 w-full;
+}
+
+.btnContainer {
+  @apply inline-grid grid-cols-2 gap-0 mx-0 max-w-2xl flex-grow w-full;
+}
+
+.button {
+  @apply p-3 w-full h-full font-bold;
+}
+.buttonActive {
+  @apply bg-theme-primary-2 text-accents-9 cursor-default;
+}
+
+.grid {
+  @apply inline-grid grid-cols-2 gap-y-4 gap-x-3 my-3 flex-grow w-full max-w-5xl;
+
+  @screen md {
+    @apply grid-cols-3;
+  }
+}
+
+.item {
+  @apply rounded-xl h-14 text-center font-bold text-white bg-brand-primary p-0;
+}

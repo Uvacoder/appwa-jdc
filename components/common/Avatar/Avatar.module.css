@@ -1,0 +1,12 @@
+.root {
+  @apply inline-block rounded-full border-2 border-theme-primary transition duration-150;
+}
+
+.hover {
+  &:hover {
+    @apply border-theme-secondary;
+  }
+  &:focus {
+    @apply border-theme-secondary;
+  }
+}

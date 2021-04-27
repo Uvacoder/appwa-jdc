@@ -1,0 +1,6 @@
+.root {
+  @apply mb-5;
+  & input {
+    @apply p-2 rounded-lg w-full;
+  }
+}

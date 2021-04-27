@@ -1,0 +1,21 @@
+.root {
+  @apply relative;
+}
+
+.header {
+  @apply flex justify-between items-center py-3 mb-4 shadow-sm border-b border-accents-1 sticky bg-theme-primary z-20;
+  top: 88px;
+
+  & > h2 {
+    @apply font-bold text-xl;
+  }
+
+  & > button {
+    @apply bg-accents-1 rounded-lg border-2 border-accents-1;
+    padding: 6px 10px;
+  }
+
+  & > button:hover {
+    @apply border-brand-primary;
+  }
+}

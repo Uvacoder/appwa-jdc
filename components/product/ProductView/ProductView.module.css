@@ -1,0 +1,104 @@
+.root {
+  @apply relative grid items-start gap-2 pt-3 grid-cols-1 overflow-x-hidden;
+
+  @screen lg {
+    @apply grid-cols-12;
+  }
+}
+
+.productDisplay {
+  @apply relative flex px-0 pb-0 box-border col-span-1 bg-purple-700 h-32;
+  min-height: 300px;
+
+  @screen md {
+    min-height: 500px;
+  }
+
+  @screen lg {
+    @apply mx-0 col-span-6;
+    min-height: 600px;
+  }
+}
+
+.nameBox {
+  @apply top-6 left-0 z-20 px-4;
+
+  @screen lg {
+    @apply left-6 p-0;
+  }
+
+  & .name {
+    @apply py-2 bg-theme-primary text-primary font-bold text-2xl;
+    letter-spacing: 0.4px;
+
+    @screen md {
+      @apply text-4xl;
+    }
+
+    @screen lg {
+      @apply pt-0;
+    }
+  }
+
+  & .price {
+    @apply py-2 pb-2 bg-theme-primary text-primary inline-block tracking-wide text-2xl;
+
+    @screen md {
+      @apply text-xl;
+    }
+  }
+}
+
+.sidebar {
+  @apply flex flex-col col-span-1 mx-auto max-w-2xl px-6 pt-3 w-full h-full;
+
+  @screen lg {
+    @apply col-span-6 justify-between pt-0;
+  }
+}
+
+.sliderContainer {
+  @apply absolute z-10 inset-0 flex items-center justify-center overflow-x-hidden;
+}
+
+.imageContainer {
+  & > div {
+    @apply h-full;
+    & > div {
+      @apply h-full;
+    }
+  }
+}
+
+.img {
+  @apply w-full h-auto max-h-full object-cover;
+}
+
+.button {
+  @apply w-full my-6;
+}
+
+.wishlistButton {
+  @apply fixed bottom-4 right-4 p-1 border-accents-8 border-2 bg-theme-primary-2 text-primary w-15 h-15 flex items-center justify-center font-semibold leading-6 cursor-pointer rounded-full shadow-lg;
+  z-index: 55;
+
+  @screen lg {
+    @apply right-12 bottom-8;
+  }
+}
+
+.sectionTitle {
+  @apply font-bold capitalize mb-1;
+}
+
+.description {
+  @apply w-full text-sm;
+
+  @screen md {
+    font-size: 1rem;
+  }
+
+  & iframe {
+    @apply my-5 w-full mx-auto;
+  }
+}

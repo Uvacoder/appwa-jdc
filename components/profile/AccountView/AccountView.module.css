@@ -1,0 +1,11 @@
+.root {
+  @apply relative grid-cols-2;
+}
+
+.column {
+  @apply col-span-1;
+}
+
+.rightAlign {
+  @apply justify-end;
+}

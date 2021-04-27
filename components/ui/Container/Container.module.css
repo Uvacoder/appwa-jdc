@@ -1,0 +1,15 @@
+.root {
+  @apply mx-auto px-3 max-w-none relative;
+
+  @screen md {
+    @apply px-6;
+  }
+}
+
+.img {
+  @apply absolute object-cover object-center top-0 right-0 left-0 bottom-0 z-10 pointer-events-none;
+}
+
+.overlay {
+  @apply absolute z-20 h-full w-screen left-0 top-0 right-0 bottom-0 opacity-50 bg-gray-900;
+}

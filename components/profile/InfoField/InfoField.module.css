@@ -1,0 +1,26 @@
+.root {
+  @apply mb-4;
+
+  & p {
+    @apply text-lg mt-0;
+  }
+  & span {
+    @apply text-accents-6 text-sm;
+
+    &:hover {
+      @apply underline text-accents-9 cursor-pointer;
+    }
+  }
+}
+
+.label {
+  @apply text-sm text-accents-8 block;
+}
+
+.content {
+  @apply text-lg mt-0 block border-transparent border-b-2 pb-1;
+}
+
+.input {
+  @apply bg-transparent border-b-2 border-accents-9;
+}

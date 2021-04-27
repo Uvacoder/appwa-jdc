@@ -1,0 +1,51 @@
+.root {
+  @apply flex flex-col h-64 mx-auto justify-between rounded-lg w-48;
+
+  @screen md {
+    @apply flex-row h-14 mx-auto p-0 w-auto max-w-2xl;
+  }
+}
+
+.selectGroup {
+  @apply flex flex-col justify-between rounded-lg shadow-xl max-w-xs;
+
+  @screen md {
+    @apply flex-row mx-auto w-auto h-auto bg-white rounded-lg p-0 max-w-2xl;
+  }
+}
+
+.select {
+  @apply relative h-14 mb-3 flex flex-row flex-grow items-center rounded-lg cursor-pointer text-black bg-white;
+
+  & > select {
+    @apply h-full w-full appearance-none cursor-pointer rounded-lg pl-3 transition duration-200;
+
+    @screen md {
+      &:hover {
+        @apply bg-gray-300;
+      }
+    }
+  }
+
+  & > span {
+    transform: rotate(180deg);
+    @apply absolute right-4 z-20 pointer-events-none rotate-180;
+  }
+
+  @screen md {
+    @apply m-0 h-auto px-0 w-48;
+  }
+}
+
+.submitBtn {
+  @apply bg-brand-primary flex justify-center items-center rounded-lg text-white duration-200 whitespace-no-wrap font-bold flex-grow;
+  transition: 200ms;
+
+  &:hover {
+    filter: brightness(1.16);
+  }
+
+  @screen md {
+    @apply h-auto ml-3 p-5;
+  }
+}

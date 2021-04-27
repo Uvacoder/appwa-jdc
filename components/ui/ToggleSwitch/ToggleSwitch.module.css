@@ -1,0 +1,22 @@
+.root {
+  @apply relative;
+}
+
+.toggle__line {
+  @apply w-10 h-4 bg-accents-2 rounded-full shadow-inner;
+}
+
+.toggle__dot {
+  @apply absolute w-6 h-6 bg-white shadow-md rounded-full inset-y-0 left-0;
+  top: -0.25rem;
+  left: -0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.checked {
+  transform: translateX(100%);
+}
+
+.icon {
+  @apply absolute h-5 w-5 top-0.5 left-0.5 transition-opacity duration-300;
+}

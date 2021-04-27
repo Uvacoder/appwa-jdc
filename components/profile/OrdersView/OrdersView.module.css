@@ -1,0 +1,15 @@
+.root {
+  @apply relative overflow-x-scroll mt-5;
+}
+
+.table {
+  @apply;
+}
+
+.topRow {
+  @apply border-b border-accents-3;
+
+  & th {
+    @apply whitespace-no-wrap pr-6 pb-2;
+  }
+}

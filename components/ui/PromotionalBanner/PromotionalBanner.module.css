@@ -1,0 +1,54 @@
+.root {
+  @apply relative flex flex-col justify-center content-center w-full mb-7 px-10 shadow-lg h-72;
+
+  @screen md {
+    @apply h-80;
+  }
+
+  @screen lg {
+    @apply h-96;
+  }
+}
+
+.contentWrapper {
+  @apply relative w-full m-auto;
+
+  @screen md {
+    @apply w-3/4 max-w-8xl;
+  }
+}
+
+.contentContainer {
+  @apply relative flex flex-col justify-between z-30 max-w-sm;
+
+  @screen md {
+    @apply max-w-5xl;
+  }
+}
+
+.title {
+  @apply font-bold text-2xl;
+
+  @screen md {
+    /* text-shadow: 2px 2px 6px #2b2b2b; */
+    @apply font-bold text-4xl leading-8;
+  }
+}
+
+.subtitle {
+  @apply text-lg;
+  @screen md {
+    @apply text-2xl;
+  }
+}
+
+.paragraph {
+  @apply w-full;
+  @screen md {
+    @apply w-1/2;
+  }
+}
+
+.callToAction {
+  @apply px-4 py-3 mt-3 text-white bg-brand-primary rounded-full;
+}

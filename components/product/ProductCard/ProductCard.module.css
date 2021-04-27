@@ -1,0 +1,116 @@
+.root {
+  @apply relative bg-accents-1 transition rounded-2xl p-3;
+
+  &:hover img {
+    @apply transform scale-110 transition-transform duration-200;
+  }
+}
+
+.cardContent {
+  @apply h-full flex items-stretch overflow-hidden;
+}
+
+.horizontal {
+  @apply flex items-stretch;
+  max-height: 140px;
+
+  @screen sm {
+    max-height: 200px;
+  }
+}
+
+.vertical {
+  @apply flex-col justify-center max-h-full;
+}
+
+.responsive {
+  overflow: hidden;
+  max-height: 140px;
+
+  @screen sm {
+    @apply flex-col justify-center max-h-full;
+  }
+}
+
+.wishlistButton {
+  @apply absolute top-3 left-3 z-10 w-10 h-10 flex ml-auto items-center justify-center text-primary font-semibold cursor-pointer rounded-full;
+  transition: 200ms;
+
+  &:hover {
+    @apply transform scale-110;
+  }
+
+  @screen sm {
+    @apply right-3;
+  }
+}
+
+.imageContainer {
+  @apply flex items-center justify-center rounded-lg transform transition-transform duration-200 overflow-hidden;
+  min-width: 40%;
+
+  & > div {
+    min-width: 100%;
+  }
+
+  @screen sm {
+    @apply min-w-full;
+    & > div {
+      min-width: 100%;
+    }
+  }
+}
+
+.infoContainer {
+  @apply flex flex-col justify-between pl-3 pt-2 flex-grow;
+
+  @screen sm {
+    @apply relative w-full text-center pt-4 px-0 h-40;
+  }
+}
+
+.productTitle {
+  @apply h-12 pt-0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  &:hover {
+    @apply underline;
+  }
+
+  & > h3 {
+    @apply text-primary font-bold flex-grow-0 h-full;
+  }
+
+  @screen sm {
+    @apply h-14;
+    & > h3 {
+      @apply text-lg m-auto mx-4;
+    }
+  }
+}
+
+.productPrice {
+  @apply text-brand-primary font-bold inline-block p-0 mt-1;
+  letter-spacing: 0.4px;
+
+  & > span {
+    font-size: 1rem;
+  }
+
+  @screen sm {
+    @apply pt-2 mt-0 mb-2;
+  }
+}
+
+.cartButton {
+  @apply bg-theme-primary text-brand-primary font-bold rounded-lg p-1 border-accents-1 border-2 transition duration-150;
+
+  &:hover {
+    @apply border-brand-primary border-2;
+  }
+
+  @screen sm {
+    @apply p-2;
+  }
+}

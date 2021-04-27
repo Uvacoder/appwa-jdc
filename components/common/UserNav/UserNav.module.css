@@ -1,0 +1,58 @@
+.root {
+  @apply relative flex justify-center items-center;
+}
+
+.list {
+  @apply flex;
+  @screen md {
+    @apply flex-row items-center justify-center h-full;
+  }
+}
+
+.item {
+  @apply mr-5 cursor-pointer relative transition ease-in-out duration-100 items-center outline-none text-primary flex;
+
+  &:focus,
+  &:active {
+    @apply outline-none;
+  }
+
+  &:last-child {
+    @apply mr-0;
+  }
+
+  @screen md {
+    @apply flex justify-center flex-grow;
+  }
+}
+
+.mobileHide {
+  @apply hidden;
+
+  @screen md {
+    @apply flex;
+  }
+}
+
+.menuBtn {
+  @apply mr-0;
+  @screen md {
+    @apply mr-6 hidden;
+  }
+
+  & > button {
+    @apply h-6 w-6;
+  }
+}
+
+.bagCount {
+  @apply border border-accents-1 bg-theme-secondary text-secondary h-4 w-4 absolute rounded-full right-3 top-3 flex items-center justify-center font-bold text-xs;
+}
+
+.avatarButton {
+  @apply inline-flex justify-center rounded-full;
+}
+
+.avatarButton:focus {
+  @apply outline-none;
+}

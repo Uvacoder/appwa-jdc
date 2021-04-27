@@ -1,0 +1,35 @@
+.root {
+  @apply relative mt-10 w-full;
+}
+
+.carouselContainer {
+  @apply flex flex-row relative w-full pb-8 overflow-visible;
+}
+
+.carousel {
+  @apply relative grid grid-rows-1 gap-4 m-auto overflow-x-scroll pb-5 bg-transparent px-3 w-auto;
+  grid-template-columns: 200px 200px;
+}
+
+.productCard {
+  min-width: 177px;
+  max-width: 177px;
+  width: 177px;
+  @apply bg-theme-primary-2 flex flex-col justify-between rounded-xl shadow-lg w-72 mr-6;
+}
+
+.info {
+  @apply flex flex-col p-2 pt-0;
+}
+
+.title {
+  @apply font-bold py-1;
+}
+
+.price {
+  @apply p-1 text-brand-primary;
+}
+
+.addToCartBtn {
+  @apply bg-accents-8 text-accents-1 shadow-sm  py-1 px-3 mt-1 rounded-full;
+}

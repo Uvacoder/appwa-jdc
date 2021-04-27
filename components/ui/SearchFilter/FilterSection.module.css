@@ -1,0 +1,16 @@
+.root {
+  @apply bg-accents-1 rounded-lg mb-6 text-sm overflow-hidden duration-150;
+}
+
+.sectionHeader {
+  @apply flex justify-between items-center w-full h-15 px-4 mb-4 font-bold tracking-wide border-b;
+  font-size: 1.04rem;
+}
+
+.list {
+  @apply px-4 pb-2;
+
+  & > li {
+    @apply py-1 text-accents-8 my-1 flex justify-center items-center;
+  }
+}

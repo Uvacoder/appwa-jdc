@@ -1,0 +1,19 @@
+.root {
+  @apply w-full;
+}
+
+.item {
+  @apply p-1 text-lg;
+
+  &:hover {
+    @apply underline;
+  }
+
+  @screen lg {
+    @apply text-lg;
+  }
+}
+
+.link {
+  @apply block font-bold;
+}

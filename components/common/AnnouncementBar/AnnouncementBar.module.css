@@ -1,0 +1,15 @@
+.root {
+  @apply text-center p-1 text-sm flex-row align-baseline justify-center items-center font-medium top-0 w-full transition-all duration-300 ease-out bg-brand-primary h-8 text-white;
+
+  &:hover {
+    filter: brightness(1.14);
+  }
+
+  @screen md {
+    @apply text-left;
+  }
+}
+
+.closeBtn {
+  @apply self-end absolute text-2xl right-2 bottom-0;
+}

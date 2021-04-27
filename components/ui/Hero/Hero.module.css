@@ -1,0 +1,20 @@
+.root {
+  @apply flex flex-col justify-center mx-auto py-12 h-auto;
+
+  @screen md {
+    @apply h-96;
+  }
+  @screen lg {
+    height: 650px;
+  }
+}
+
+.headline {
+  @apply text-white font-bold text-center text-4xl mb-3;
+  @screen md {
+    @apply text-5xl;
+  }
+  @screen lg {
+    @apply text-6xl;
+  }
+}

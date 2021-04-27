@@ -1,0 +1,19 @@
+.root {
+  @apply relative;
+}
+
+.selectContainer {
+  @apply rounded-lg flex items-center p-0 w-48 border-accents-6 border;
+}
+
+.select {
+  @apply rounded-lg w-full bg-transparent appearance-none p-3 outline-none;
+
+  &:hover {
+    @apply cursor-pointer;
+  }
+}
+
+.arrow {
+  @apply absolute pointer-events-none right-3 mr-3;
+}
